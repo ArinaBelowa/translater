@@ -20,13 +20,16 @@
     </header>
     <main>
         <section id="#title">
-            <h2>Добро пожаловать!</h2>
-            <p>Это основной контент.</p>
+            <h2>Переводчик</h2>
         </section>
-        <section id="#contacts">
-            <h2><img src="images/fluent_copy-24-regular.png" height="25" width="25" alt="хз">Контакты</h2>
-            <p><em>Информация о компании, контакты.</em></p>
-        </section>    
+        <section id="#translate">
+            <h2><img src="images/Group.png" height="25" width="25" alt="Переводчик"> Переводчик</h2>
+            <p><em>Переводите.</em></p>
+            <form action="/submit" method="post">
+            <input type="text" id="translated text" name="translated text" placeholder="Введите текст для перевода"><input type="text" id="translation" name="translation" placeholder="Перевод">
+            </form>
+            <button type="button">Перевести</button>
+        </section>
     </main>
     <footer>
         <p>@ 2024 Все права защищены</p>
