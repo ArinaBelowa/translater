@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translater</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Translater</h1>
+    <header class="header">
+        <h1 class="header_title">Translater</h1>
         <nav>
-            <ul>
+            <ul class="translator_list">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="translator.html">Переводчик</a></li>
                 <li><a href="dictionary.html">Словарь</a></li>
@@ -20,19 +21,19 @@
     </header>
     <main>
         <section id="#title">
-            <h2>Переводчик</h2>
+            <h2 class="translator_title">Переводчик</h2>
         </section>
-        <section id="#translate">
-            <h2><img src="images/Group.png" height="25" width="25" alt="Переводчик"> Переводчик</h2>
-            <p><em>Переводите.</em></p>
+        <section id="#translate" class="translator_block">
+            <h2 class="translator_title"><img src="images/Group.png" height="25" width="25" alt="Переводчик"> Переводчик</h2>
+            <p class="translator_text"><em>Переводите.</em></p>
             <form action="/submit" method="post">
             <input type="text" id="translated text" name="translated text" placeholder="Введите текст для перевода"><input type="text" id="translation" name="translation" placeholder="Перевод">
             </form>
             <button type="button">Перевести</button>
         </section>
     </main>
-    <footer>
-        <p>@ 2024 Все права защищены</p>
+    <footer class="footer">
+        <p class="footer_title">@ 2024 Все права защищены</p>
     </footer>
     <script src="script.js"></script>
 </body>
