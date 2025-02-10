@@ -1,0 +1,16 @@
+.index__list{
+    background-color: white;
+    color: purple;
+    text-align: center;
+}
+.index__title{
+    text-align: center;
+}
+.index__text{
+    text-align: justify;
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 1.25cm;
+}

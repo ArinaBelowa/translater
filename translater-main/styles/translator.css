@@ -1,0 +1,15 @@
+.translator__list{
+    background-color: white;
+    color: purple;
+    text-align: center;
+}
+.translator__title{
+    text-align: center;
+}
+.translator__text{
+    background-color: white;
+    color: grey;
+}
+.translator__block{
+    text-align: center;
+}

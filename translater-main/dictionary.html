@@ -11,29 +11,29 @@
     <header class="header">
         <h1 class="header__title">Translater</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="translator.html">Переводчик</a></li>
-                <li><a href="dictionary.html">Словарь</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+            <ul class="nobullet">
+                <li><a class="link" href="index.html">Главная</a></li>
+                <li><a class="link" href="translator.html">Переводчик</a></li>
+                <li><a class="link" href="dictionary.html">Словарь</a></li>
+                <li><a class="link" href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="#title">
-            <h2>Словарь</h2>
+            <h2 class="dictionary__title">Словарь</h2>
         </section>
-        <section id="#dictionary">
-            <h2><img src="images/Vector (1).png" height="25" width="25" alt="Словарь"> Словарь</h2>
-            <p><em>Ищите слова.</em></p>
+        <section id="#dictionary" class="dictionary__block">
+            <h2 class="dictionary__title"><img src="images/Vector (1).png" height="25" width="25" alt="Словарь"> Словарь</h2>
+            <p class="dictionary__text"><em>Ищите слова.</em></p>
             <form action="/submit" method="post">
                 <input type="text" id="dictionary" name="dictionary" placeholder="Введите слово для поиска">
             </form>
             <button type="button">Искать</button>
         </section>
     </main>
-    <footer>
-        <p>@ 2024 Все права защищены</p>
+    <footer class="footer">
+        <p class="footer__title">@ 2024 Все права защищены</p>
     </footer>
     <script src="script.js"></script>
 </body>

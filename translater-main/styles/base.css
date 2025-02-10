@@ -18,6 +18,8 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .visually-hidden {
@@ -31,4 +33,14 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.nobullet {
+    list-style-type: none;
+    text-align: center;
+  }
+.link {
+    text-decoration: none;
+}
+form{
+    text-align: center;
 }

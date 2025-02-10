@@ -8,3 +8,11 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+/* Подключение стилей относящихся к contacts */
+@import "contacts.css";
+/* Подключение стилей относящихся к dictionary */
+@import "dictionary.css";
+/* Подключение стилей относящихся к translator */
+@import "translator.css";
+/* Подключение стилей относящихся к index */
+@import "index.css";
