@@ -15,3 +15,4 @@ https://www.figma.com/design/Y7aUXsBcB1OTulsrvwLyhq/WEB-translate-(Community)?no
 - 27.11 - Информация разбита на страницы
 - 11.12 - Добавлены шрифты и css
 - 18.12 - Добавлены css
+- 27.03 - Работа с классами
