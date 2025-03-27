@@ -1,8 +1,30 @@
-.header{
+.header__title{
     background-color: white;
     color: purple;
+    margin: 0;
 }
-.header_title{
+.menu{
     font-size: 69px;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
+.menu__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: purple;
+    text-decoration: none;
+   }
+   .header__button{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: purple;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+    }

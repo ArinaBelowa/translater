@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header_title">Translater</h1>
+    <header class="header container">
+        <a>
+            <h1 class="header__title">Translater</h1>
+        </a>
         <nav>
-            <ul class="index_list">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="translator.html">Переводчик</a></li>
-                <li><a href="dictionary.html">Словарь</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+            <ul class="menu">
+                <li class="menu__link"><a href="index.html">Главная</a></li>
+                <li class="menu__link"><a href="translator.html">Переводчик</a></li>
+                <li class="menu__link"><a href="dictionary.html">Словарь</a></li>
+                <li class="menu__link"><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul>
+                <li class="header__button"> Вход/Регистрация</li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main container">
         <section id="#title">
             <h2>Добро пожаловать!</h2>
             <p>Это основной контент.</p>
@@ -29,8 +34,8 @@
             <p><em>Информация о компании, контакты.</em></p>
         </section>    
     </main>
-    <footer class="footer">
-        <p class="footer_title">@ 2024 Все права защищены</p>
+    <footer class="footer container">
+        <p class="footer__title">@ 2024 Все права защищены</p>
     </footer>
     <script src="script.js"></script>
 </body>
