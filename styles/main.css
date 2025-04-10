@@ -1,0 +1,27 @@
+.body__title{
+    text-align: center;
+}
+.body__title-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+.body__text{
+    text-align: center;
+}
+.link{
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+}
+.form{
+    text-align: center;
+}
+.form__button{
+    margin: 0 auto;
+    display: block;
+}

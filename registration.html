@@ -23,16 +23,19 @@
         </nav>
     </header>
     <main class="main container">
-        <section id="#title">
-            <h2 class="body__title">Переводчик</h2>
-        </section>
-        <section id="#translate" class="translator__block">
-            <h2 class="body__title"><img src="images/Group.png" height="25" width="25" alt="Переводчик"> Переводчик</h2>
-            <p class="body__text"><em>Переводите.</em></p>
+        <section id="#login">
+            <h2 class="body__title">Вход/Регистрация</h2>
             <form action="/submit" method="post" class="form">
-            <input type="text" id="translated text" name="translated text" placeholder="Введите текст для перевода"><input type="text" id="translation" name="translation" placeholder="Перевод">
+                <input type="text" id="login" name="login" placeholder="Введите e-mail">
             </form>
-            <button type="button" class="form__button">Перевести</button>
+            <form action="/submit" method="post" class="form">
+                <input type="text" id="login" name="password" placeholder="Придумайте пароль">
+            </form>
+            <form action="/submit" method="post" class="form">
+                <input type="text" id="login" name="password" placeholder="Подтвердите пароль">
+            </form>
+            <button type="button" class="form__button">Регистрация</button>
+            <a class="link" href="login.html">Вход</a>
         </section>
     </main>
     <footer class="footer container">

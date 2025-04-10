@@ -14,31 +14,29 @@
         </a>
         <nav>
             <ul class="menu">
-                <li class="menu__link"><a href="index.html">Главная</a></li>
-                <li class="menu__link"><a href="translator.html">Переводчик</a></li>
-                <li class="menu__link"><a href="dictionary.html">Словарь</a></li>
-                <li class="menu__link"><a href="contacts.html">Контакты</a></li>
+                <li><a href="index.html" class="menu__link">Главная</a></li>
+                <li><a href="translator.html" class="menu__link">Переводчик</a></li>
+                <li><a href="dictionary.html" class="menu__link">Словарь</a></li>
+                <li><a href="contacts.html" class="menu__link">Контакты</a></li>
+                <li><a href="login.html" class="menu__link"> Вход/Регистрация</a></li>
             </ul>
         </nav>
-        <div class="header__button">
-            <a> Вход/Регистрация</a>
-        </div>
     </header>
     <main class="main container">
         <section id="#title">
-            <h2>Словарь</h2>
+            <h2 class="body__title">Словарь</h2>
         </section>
         <section id="#dictionary">
-            <h2><img src="images/Vector (1).png" height="25" width="25" alt="Словарь"> Словарь</h2>
-            <p><em>Ищите слова.</em></p>
-            <form action="/submit" method="post">
+            <h2 class="body__title-wrap"><img src="images/Vector (1).png" height="25" width="25" alt="Словарь"> Словарь</h2>
+            <p class="body__text"><em>Ищите слова.</em></p>
+            <form action="/submit" method="post" class="form">
                 <input type="text" id="dictionary" name="dictionary" placeholder="Введите слово для поиска">
             </form>
-            <button type="button">Искать</button>
+            <button type="button" class="form__button">Искать</button>
         </section>
     </main>
     <footer class="footer container">
-        <p class="footer__title">@ 2024 Все права защищены</p>
+        <p class="footer__title">@ 2025 Все права защищены</p>
     </footer>
     <script src="script.js"></script>
 </body>

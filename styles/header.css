@@ -4,7 +4,8 @@
 .header__title{
     background-color: white;
     color: purple;
-    margin: 0;
+    padding: 10px;
+    margin: 5px;
 }
 .menu{
     font-size: 25px;
@@ -14,20 +15,23 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 .menu__link{
     display: block;
     padding: 10px;
     margin: 5px;
-    background-color: rgb(255, 255, 255);
-    color: purple;
+    background-color: purple;
+    color: white;
     text-decoration: none;
+    font-size: 20px;
 }
-   .header__button{
-    display: inline-block;
-     padding: 10px;
-     margin: 5px;
-     background-color: purple;
-     color: rgb(255, 255, 255);
-     text-decoration: none;
+.header__button{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
 }
