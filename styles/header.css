@@ -26,7 +26,10 @@
     text-decoration: none;
     font-size: 20px;
 }
-.menu 
+.menu__link:hover{
+    background-color: rgb(85, 0, 85);
+    color: #ffffff;
+}
 .header__button{
     display: block;
     padding: 10px;

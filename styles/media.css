@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .header {
+        flex-wrap: wrap;
+        scale: 80%;
+        max-width: 110%;
+    }
+
+}
