@@ -6,6 +6,7 @@
     <title>Translater</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header class="header container">
@@ -21,25 +22,46 @@
         </nav>
     </header>
     <main class="main container">
-        <section id="#title">
+        <section id="#title" class="titleText">
             <h2 class="body__title-wrap"><img src="images/Group (1).png" height="25" width="25" alt="Переводчик"> Переводчик</h2>
+            <p class="body__text"><em>Лучший переводчик в мире. Да что там в мире... в России!</em></p>
         </section>
         <section id="#translate" class="translator">
-            <p class="body__text"><em>Переводите.</em></p>
-            <div class="translator__block">
-                <div class="text__input">
-                    <textarea spellcheck="false" class="form__from-text" placeholder="Введите текст для перевода"></textarea><textarea spellcheck="false" readonly disabled class="form__to-text" placeholder="Перевод"></textarea>
+                <div class="translator__property">
+                    <ul class="nuv__item">
+                        <li>
+                            <select>
+                            </select>
+                        </li>
+                        <li class="bx bx-transfer"></li>
+                        <li>
+                            <select>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="write__box">
+                        <div class="Property__from">
+                            <textarea id="textinput" maxlength="5000" class="fromText" placeholder="Введите текст для перевода"></textarea>
+                            <div class="icons">
+                                <span class="bx bx-volume-full from"></span>
+                                <div class="code__length">0/5000</div>
+                            </div>
+                        </div>
+                        <div class="Property__trans">
+                            <textarea id="textoutput" class="toTranslate" disabled></textarea>
+                            <div class="icons">
+                                <span class="bx bx-volume-full to"></span>
+                                <span class="bx bx-copy"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <button type="button" class="form__button__translate">Перевести</button>
         </section>
     </main>
     <footer class="footer container">
-        <p class="footer__title">@ 2025 Translater, LTD Все права защищены</p>
+        <p class="footer__title">@ 2025 Translater, LTD Соловьев Дмитрий, Белова Арина, Щенников Александр</p>
     </footer>
-
-    <script src="scripts/translate.js"></script>
-    <script src="scripts/countries.js"></script>
-
+    <script src="scripts/language.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

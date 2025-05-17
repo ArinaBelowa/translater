@@ -1,3 +1,6 @@
+.titleText{
+    margin-bottom: 35px;
+}
 .body__title{
     text-align: center;
     margin-top: 50px;
@@ -15,8 +18,13 @@
     text-align: center;
 }
 .body__list{
-    margin-left: 200px;
+    list-style: none;
 }
+.body__mainText{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
 .link{
     text-align: center;
     text-decoration: underline;
@@ -36,6 +44,7 @@
     margin: auto;
     margin-bottom: 10px;
 }
+
 .project__card{
     display: grid;
     width: 350px;
@@ -44,6 +53,7 @@
     background-color: rgb(255, 255, 255);
     color: black;
     box-shadow: 1px 2px 20px 5px #d6d4d3;
+    border-radius: 0.3rem;
 }
 .project__card-top{
     margin: auto;
@@ -56,6 +66,7 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
+    border-radius: 0.3rem;
 }
 .project__link:hover{
     background-color: rgb(87, 5, 87);
@@ -68,38 +79,6 @@
     gap: 20px;
     flex-wrap: wrap;
     list-style-type: none;
-}
-.translator__block{
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.translator__block .text__input {
-    display: block;
-}
-.text__input .form__to-text {
-    border-radius: 0px;
-    border-top: 1px solid #ccc;
-}
-.text__input textarea {
-    height: 200px;
-    width: 100%;
-    border: none;
-    outline: none;
-    resize: none;
-    background: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 0.3rem;
-}
-.text__input textarea::placeholder {
-    color: #b7b6b6;
-}
-.translator{
-    width: 50%;
-    padding: 30px;
-    background: #fff;
-    border-radius: 1rem;
-    margin: auto;
 }
 .form__button {
     width: 10%;
@@ -146,5 +125,11 @@
     color: #ffffff;
 }
 .main {
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.body__title-wrap .bx{
+    width: 35px;
+    height: 35px;
+    display: flex;
 }
