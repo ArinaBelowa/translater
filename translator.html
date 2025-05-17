@@ -24,12 +24,14 @@
         <section id="#title">
             <h2 class="body__title-wrap"><img src="images/Group (1).png" height="25" width="25" alt="Переводчик"> Переводчик</h2>
         </section>
-        <section id="#translate" class="translator__block">
+        <section id="#translate" class="translator">
             <p class="body__text"><em>Переводите.</em></p>
-            <form action="/submit" method="post" class="form">
-            <input type="text" id="translated text" name="translated text" placeholder="Введите текст для перевода"><input type="text" id="translation" name="translation" placeholder="Перевод">
-            </form>
-            <button type="button" class="form__button">Перевести</button>
+            <div class="translator__block">
+                <div class="text__input">
+                    <textarea spellcheck="false" class="form__from-text" placeholder="Введите текст для перевода"></textarea><textarea spellcheck="false" readonly disabled class="form__to-text" placeholder="Перевод"></textarea>
+                </div>
+            </div>
+            <button type="button" class="form__button__translate">Перевести</button>
         </section>
     </main>
     <footer class="footer container">
