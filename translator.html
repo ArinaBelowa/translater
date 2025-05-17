@@ -30,28 +30,32 @@
                 <div class="translator__property">
                     <ul class="nuv__item">
                         <li>
-                            <select>
-                            </select>
+                            <select></select>
                         </li>
                         <li class="bx bx-transfer"></li>
                         <li>
-                            <select>
-                            </select>
+                            <select></select>
                         </li>
                     </ul>
                     <div class="write__box">
                         <div class="Property__from">
                             <textarea id="textinput" maxlength="5000" class="fromText" placeholder="Введите текст для перевода"></textarea>
                             <div class="icons">
-                                <span class="bx bx-volume-full from"></span>
+                                <button class="bx bx-volume-full from"></button>
                                 <div class="code__length">0/5000</div>
                             </div>
                         </div>
                         <div class="Property__trans">
                             <textarea id="textoutput" class="toTranslate" disabled></textarea>
                             <div class="icons">
-                                <span class="bx bx-volume-full to"></span>
-                                <span class="bx bx-copy"></span>
+                                <button class="bx bx-volume-full to"></button>
+                                <button class="bx bx-copy" type="button" aria-haspopup="dialog" aria-controls="myDialog">
+                                </button>
+                                <dialog class="child" id="myDialog">
+                                    <div class="dialog__wrapper">
+                                    <button class="closeDialogBtn button-black" type="button">Скопировано</button>
+                                    </div>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -63,5 +67,6 @@
     </footer>
     <script src="scripts/language.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 </html>

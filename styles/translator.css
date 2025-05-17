@@ -96,3 +96,48 @@
     font-size: 18px;
     color: #606060;
 }
+
+
+dialog {
+    position: fixed;
+    height: 100px;
+    width: 150px;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+    top: 67%;
+    left: 70%;
+}
+.bx-copy {
+    width: 35px;
+    height: 35px;
+    background: #ebdfe9;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.closeDialogBtn {
+    margin: 15% auto 0;
+    border: none;
+    border-radius: 3rem;
+    padding: 9px 15px;
+    color: #000000;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog__wrapper {
+    padding: 1em;
+}
+
+.scroll-lock {
+    overflow: hidden;
+}

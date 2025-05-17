@@ -49,7 +49,7 @@ toVoice.addEventListener('click', function() {
     speechSynthesis.speak(toTalk)
 })
 
-cpyBtn.addEventListener('click', function() {
+cpyBtn.addEventListener('click', function myFunction() {
     navigator.clipboard.writeText(transText.value);
 })
 
