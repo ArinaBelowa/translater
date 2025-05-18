@@ -17,7 +17,7 @@
                 <li><a href="translator.html" class="menu__link">Переводчик</a></li>
                 <li><a href="dictionary.html" class="menu__link">Словарь</a></li>
                 <li><a href="contacts.html" class="menu__link">Контакты</a></li>
-                <li><a href="login.html" class="menu__link"> Вход/Регистрация</a></li>
+                <li><a class="header__login"> Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -61,12 +61,66 @@
                     </div>
                 </div>
         </section>
+        <div class="dialog dialog--layout" hidden>
+            <div class="dialog__content">
+                <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="35"
+                    height="35"></button>
+                    <!-- Форма "Войдите в профиль" -->
+                <section class="popup" id="popup-select">
+                    <h2 class="popup__title">Войдите в профиль</h2>
+                    <div class="popup__buttons">
+                        <button class="button button--accent" type="button" data-login>Войти</button>
+                        <button class="button" type="button" data-registration>Регистрация</button>
+                    </div>
+                </section>
+                    <!--/ Форма "Войдите в профиль" -->
+                    <!-- Форма "Регистрация" -->
+                <section class="popup" id="popup-registration" hidden>
+                    <h2 class="popup__title popup__title--registration">Регистрация</h2>
+                    <form class="popup__form form" action="/" method="post">
+                        <input class="form__field" type="text" name="name" placeholder="Имя" required>
+                        <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                            <fieldset class="form__fieldset">
+                                <div class="form__field-block">
+                                    <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                                    <span class="form__field-alert">Минимум 8 символов</span>
+                                </div>
+                                <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                                required>
+                            </fieldset>
+                            <fieldset class="form__buttons">
+                                <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                                <button class="button" type="button">Отмена</button>
+                            </fieldset>
+                        <button class="button button--link" type="button"><a href="login.html" class="popup__link">У меня уже есть аккаунт</a></button>
+                    </form>
+                </section>
+                <!--/ Форма "Регистрация" -->
+                <!-- Форма "Войти" -->
+                <section class="popup" id="popup-login" hidden>
+                    <h2 class="popup__title">Войти</h2>
+                    <form class="popup__form form" action="/" method="post">
+                        <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Войти</button>
+                            <button class="button" type="button">Отмена</button>
+                        </fieldset>
+                        <p class="button button--link" type="button"><a href="registration.html" class="popup__link">У меня еще нет аккаунта</a></p>
+                    </form>
+                </section>
+                <!--/ Форма "Войти" -->
+            </div>
+        </div>
     </main>
     <footer class="footer container">
         <p class="footer__title">@ 2025 Translater, LTD Соловьев Дмитрий, Белова Арина, Щенников Александр</p>
     </footer>
+    
     <script src="scripts/language.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/popup.js"></script>
+    <script src="scripts/login.js"></script>
+
 </body>
 </html>

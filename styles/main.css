@@ -4,6 +4,7 @@
 .body__title{
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 .body__title-wrap{
     display: flex;
@@ -11,6 +12,7 @@
     gap: 10px;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 30px;
     width: 100%;
     justify-content: center;
 }
@@ -37,17 +39,19 @@
     margin-bottom: 10px;
 }
 .form__enter{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+    display: grid;
     margin: auto;
-    margin-bottom: 10px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.project__cardList{
+    display: flex;
 }
 
 .project__card{
     display: grid;
-    width: 350px;
+    width: 450px;
     margin: auto;
     padding: 15px;
     background-color: rgb(255, 255, 255);
@@ -55,10 +59,19 @@
     box-shadow: 1px 2px 20px 5px #d6d4d3;
     border-radius: 0.3rem;
 }
+
 .project__card-top{
     margin: auto;
     color: purple;
 }
+.project__cardName{
+    margin: auto;
+}
+
+.project__cardDescription{
+    margin: auto;
+}
+
 .project__link{
     display: block;
     padding: 10px;
@@ -68,18 +81,26 @@
     text-align: center;
     border-radius: 0.3rem;
 }
+
 .project__link:hover{
     background-color: rgb(87, 5, 87);
     color: #ffffff;
 }
+
 .project__list{
     margin: auto;
+    margin-top: 20px;
     padding: 20px 0;
-    display: flex;
-    gap: 20px;
+    display: grid;
     flex-wrap: wrap;
     list-style-type: none;
 }
+
+.project__listTitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .form__button {
     width: 10%;
     padding: 14px;
@@ -132,4 +153,146 @@
     width: 35px;
     height: 35px;
     display: flex;
+}
+
+/*Диалоговое окно входа*/
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(58, 60, 65, 0.25);
+}
+
+.dialog__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    max-width: 500px;
+    width: 100%;
+    padding: 60px;
+
+    border-radius: 0.3rem;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #ffffff;
+    box-shadow: 0 16px 72px 0 rgba(34, 39, 47, 0.05);
+}
+
+.popup__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 22px 20px;
+
+    background-color: initial;
+    border: none;
+
+    cursor: pointer;
+}
+
+.popup__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.popup__title--registration {
+    margin-bottom: 47px;
+}
+
+.popup.popup__desc .popup__title {
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.popup__desc {
+    margin-bottom: 40px;
+}
+
+.popup__buttons {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.button{
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    border-radius: 0.3rem;
+    background: purple;
+    color: #fff;
+    height: 35px;
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.button:hover{
+    background: rgb(75, 0, 75);
+    color: #ffffff;
+}
+
+.button--link{
+    width: 200px;
+    border: none;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.button--link:hover{
+    background: transparent;
+}
+
+.popup__link{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.form__field-block{
+    display: grid;
+}
+
+.form__buttons{
+    border: none;
+}
+
+.form__fieldset{
+    border: none;
+}
+
+.form__field{
+    width: 150px;
+    font-size: 20px;
+    margin: auto;
+    border: 1px solid #606060;
+    border-radius: 0.3rem;
+    outline: none;
+    display: grid;
+    margin-bottom: 5px;
+}
+
+.form__LogReg{
+    border: 1px solid #606060;
+    border-radius: 0.3rem;
+    outline: none;
+    margin-bottom: 5px;
+    height: 35px;
 }
