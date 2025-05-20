@@ -34,71 +34,17 @@
     display: block;
     color: rgb(0, 0, 0);
 }
+
 .form{
     text-align: center;
     margin-bottom: 10px;
 }
+
 .form__enter{
     display: grid;
     margin: auto;
     width: 250px;
     font-size: 20px;
-}
-
-.project__cardList{
-    display: flex;
-}
-
-.project__card{
-    display: grid;
-    width: 450px;
-    margin: auto;
-    padding: 15px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    box-shadow: 1px 2px 20px 5px #d6d4d3;
-    border-radius: 0.3rem;
-}
-
-.project__card-top{
-    margin: auto;
-    color: purple;
-}
-.project__cardName{
-    margin: auto;
-}
-
-.project__cardDescription{
-    margin: auto;
-}
-
-.project__link{
-    display: block;
-    padding: 10px;
-    background-color: rgb(158, 62, 167);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-
-.project__link:hover{
-    background-color: rgb(87, 5, 87);
-    color: #ffffff;
-}
-
-.project__list{
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px 0;
-    display: grid;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-.project__listTitle{
-    text-align: center;
-    margin-bottom: 30px;
 }
 
 .form__button {

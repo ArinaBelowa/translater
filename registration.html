@@ -9,35 +9,46 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <header class="header container">
-        <a>
-            <h1 class="header__title">Translater</h1>
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html" class="menu__link">Главная</a></li>
-                <li><a href="translator.html" class="menu__link">Переводчик</a></li>
-                <li><a href="dictionary.html" class="menu__link">Словарь</a></li>
-                <li><a href="contacts.html" class="menu__link">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main container">
-        <section id="#login">
-            <h2 class="body__title">Регистрация</h2>
-            <form action="/submit" method="post" class="form__enter">
-                <input type="text" id="login" name="name" placeholder="Введите имя" class="form__LogReg">
-                <input type="text" id="login" name="login" placeholder="Введите e-mail" class="form__LogReg">
-                <input type="text" id="login" name="password" placeholder="Придумайте пароль" class="form__LogReg">
-                <input type="text" id="login" name="password" placeholder="Подтвердите пароль" class="form__LogReg">
-            </form>
-            <button type="button" class="form__button">Регистрация</button>
-            <a class="link" href="login.html">Вход</a>
-        </section>
-    </main>
-    <footer class="footer container">
-        <p class="footer__title">@ 2025 Translater, LTD Соловьев Дмитрий, Белова Арина, Щенников Александр</p>
-    </footer>
-    <script src="script.js"></script>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Loading...
+    </div>
+    <div class="content">
+        <header class="header container">
+            <a><h1 class="header__title">Translater</h1></a>
+            <nav class="header__menu">
+                <ul class="menu">
+                    <!-- <li><a href="index.html" class="menu__link">Главная</a></li>
+                    <li><a href="translator.html" class="menu__link">Переводчик</a></li>
+                    <li><a href="dictionary.html" class="menu__link">Словарь</a></li>
+                    <li><a href="contacts.html" class="menu__link">Контакты</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <main class="main container">
+            <section id="#login">
+                <h2 class="body__title">Регистрация</h2>
+                <form action="/submit" method="post" class="form__enter">
+                    <input type="text" id="login" name="name" placeholder="Введите имя" class="form__LogReg">
+                    <input type="text" id="login" name="login" placeholder="Введите e-mail" class="form__LogReg">
+                    <input type="text" id="login" name="password" placeholder="Придумайте пароль" class="form__LogReg">
+                    <input type="text" id="login" name="password" placeholder="Подтвердите пароль" class="form__LogReg">
+                </form>
+                <button type="button" class="form__button">Регистрация</button>
+                <a class="link" href="login.html">Вход</a>
+            </section>
+        </main>
+        <footer class="footer container">
+            <p class="footer__title">@ 2025 Translater, LTD Соловьев Дмитрий, Белова Арина, Щенников Александр</p>
+        </footer>
+    </div>
+    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/menu.js"></script>
+
 </body>
 </html>

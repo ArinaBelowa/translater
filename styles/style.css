@@ -17,3 +17,4 @@
 /* Подключение стилей относящихся к index */
 @import "index.css";
 @import "media.css";
+@import "preloader.css";

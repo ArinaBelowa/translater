@@ -9,3 +9,44 @@
     display: grid;
     margin-bottom: 5px;
 }
+
+.words__cardList{
+    display: flex;
+}
+
+.words__card{
+    display: grid;
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 1px 2px 20px 5px #d6d4d3;
+    border-radius: 0.3rem;
+}
+
+.words__cardName{
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.words__cardDefinition{
+    margin: auto;
+    text-align: left;
+    text-indent: 10%;
+}
+
+.words__list{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: grid;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.words__listTitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
