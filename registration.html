@@ -32,14 +32,15 @@
         <main class="main container">
             <section id="#login">
                 <h2 class="body__title">Регистрация</h2>
-                <form action="/submit" method="post" class="form__enter">
-                    <input type="text" id="login" name="name" placeholder="Введите имя" class="form__LogReg">
-                    <input type="text" id="login" name="login" placeholder="Введите e-mail" class="form__LogReg">
-                    <input type="text" id="login" name="password" placeholder="Придумайте пароль" class="form__LogReg">
-                    <input type="text" id="login" name="password" placeholder="Подтвердите пароль" class="form__LogReg">
+                <form action="/submit" method="post" class="form__enter" id="formApplication">
+                    <input type="text" id="login" name="name" placeholder="Введите имя" class="form__LogReg" id="username">
+                    <input type="text" id="login" name="login" placeholder="Введите e-mail" class="form__LogReg" id="email">
+                    <input type="text" id="login" name="password" placeholder="Придумайте пароль" class="form__LogReg" id="password">
+                    <input type="text" id="login" name="password" placeholder="Подтвердите пароль" class="form__LogReg" id="password">
+                    <button type="button" class="form__button">Регистрация</button>
+                    <a class="link" href="login.html">Вход</a>
                 </form>
-                <button type="button" class="form__button">Регистрация</button>
-                <a class="link" href="login.html">Вход</a>
+                <p id="application-message" class="application__message"></p>
             </section>
         </main>
         <footer class="footer container">

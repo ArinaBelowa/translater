@@ -60,8 +60,7 @@
             </section>
             <div class="dialog dialog--layout" hidden>
                 <div class="dialog__content">
-                    <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="35"
-                        height="35"></button>
+                    <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="35" wheight="35"></button>
                     <section class="popup" id="popup-select">
                         <h2 class="popup__title">Войдите в профиль</h2>
                         <div class="popup__buttons">
@@ -69,19 +68,21 @@
                             <button class="button" type="button" data-registration>Регистрация</button>
                         </div>
                     </section>
-                    <section class="popup" id="popup-registration" hidden>
+                    <section class="popup" id="popup-registration" hidden >
                         <h2 class="popup__title popup__title--registration">Регистрация</h2>
-                        <form class="popup__form form" action="/" method="post">
-                            <input class="form__field" type="text" name="name" placeholder="Имя" required>
-                            <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                        <form class="popup__form form" action="/" method="post" id="registration-form">
+                            <input class="form__field" type="text" name="name" placeholder="Имя" required id="username">
+                            <input class="form__field" type="text" name="login" placeholder="Логин" required id="login">
+                            <input class="form__field" type="email" name="email" placeholder="Email" required id="email">
                                 <fieldset class="form__fieldset">
                                     <div class="form__field-block">
-                                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                                        <input class="form__field" type="password" name="password" placeholder="Пароль" required id="password">
                                         <span class="form__field-alert">Минимум 8 символов</span>
                                     </div>
                                     <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
-                                    required>
+                                    required id="confirm-password">
                                 </fieldset>
+                                <p id="error-message" class="error-message"></p>
                                 <fieldset class="form__buttons">
                                     <button class="button button--accent" type="submit">Зарегистрироваться</button>
                                     <button class="button" type="button">Отмена</button>
@@ -92,7 +93,7 @@
                     <section class="popup" id="popup-login" hidden>
                         <h2 class="popup__title">Войти</h2>
                         <form class="popup__form form" action="/" method="post">
-                            <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                            <input class="form__field" type="text" name="login" placeholder="Логин" required>
                             <input class="form__field" type="password" name="password" placeholder="Пароль" required>
                             <fieldset class="form__buttons">
                                 <button class="button button--accent" type="submit">Войти</button>
